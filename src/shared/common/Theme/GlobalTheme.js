@@ -1,44 +1,29 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalTheme = createGlobalStyle`
-  html {
-  box-sizing: border-box;
-  }
-  * {
-    box-sizing: inherit;
-    &:before {
-      box-sizing: inherit;
+const GlobalStyle = createGlobalStyle`
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
     }
-    &:after {
-      box-sizing: inherit;
+    *, *:before, *:after {
+        box-sizing: inherit;
+        font-family: 'Montserrat', sans-serif;
     }
-  }
-  body {
-    -webkit-font-smoothing: antialiased;
-    padding: 0;
-    margin: 0;
-    background-color: #E5E5E5;
-  }
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  ::-webkit-scrollbar-track {
-        background: #f2f2f2;
-        border: none;
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
         box-shadow: none;
+        border-radius: 16px;
+        
     }
-  ::-webkit-scrollbar-thumb {
-        background: #dfdfe7;
-        border: none;
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 16px;
         box-shadow: none;
+        background: #e0e0e0;
     }
-  * {
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-  h1,h2,h3,h4,h5 {
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
 `;
 
-export default GlobalTheme;
+export default GlobalStyle;

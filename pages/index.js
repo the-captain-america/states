@@ -1,5 +1,3 @@
-import React from 'react';
+const Home = () => <div>Example</div>;
 
-const Landing = () => <div style={{ minHeight: '100vh' }}>hi</div>;
-
-export default Landing;
+export default Home;

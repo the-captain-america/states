@@ -59,7 +59,7 @@ export const colorLuminance = (color, lum = 0) => {
 
 const theme = {
   font: {
-    primary: `'IBM Plex Sans', sans-serif`,
+    primary: 'Montserrat, sans-serif',
   },
   weight: {
     regular: 400,

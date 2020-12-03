@@ -1,16 +1,17 @@
-import React from 'react';
+import App from 'next/app';
 import { ThemeProvider } from '../src/shared/common/Theme';
-// Add below
-import Structure from '../src/components/Layout/Structure';
+import { Layout } from '../src/shared/components/Layout';
+import './styles.css';
 
-const App = ({ Component, pageProps }) => {
-  return (
-    <Structure>
-      <ThemeProvider>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </Structure>
-  );
-};
-
-export default App;
+export default class Entry extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <Layout>
+        <ThemeProvider>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </Layout>
+    );
+  }
+}
