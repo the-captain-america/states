@@ -1,20 +1,16 @@
 import React from 'react';
-import { StoreProvider } from '../src/utils/Store';
-import { ThemeProvider } from '../src/common/Theme';
-import 'antd/dist/antd.css';
+import { ThemeProvider } from '../src/shared/common/Theme';
 // Add below
 import Structure from '../src/components/Layout/Structure';
 
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <Structure>
-      <StoreProvider>
-        <ThemeProvider>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </StoreProvider>
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Structure>
   );
-}
+};
 
 export default App;
