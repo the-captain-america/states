@@ -80,23 +80,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <div className="row">
-        <ul>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/courses">
-              <a>Courses</a>
-            </Link>
-          </li>
-        </ul>
+        <ul></ul>
       </div>
       <div className="copy">
         <span>Copyright &#169;2020</span>

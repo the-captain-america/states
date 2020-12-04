@@ -1,4 +1,10 @@
 import React from 'react';
-const Home = () => <div>Example</div>;
+import Example from '../src/features/Example';
+
+const Home = () => (
+  <div>
+    <Example />
+  </div>
+);
 
 export default Home;
